@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var mainApp = angular.module('atletiblueApp', [
+var atletiblueApp = angular.module('atletiblueApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,7 +17,7 @@ var mainApp = angular.module('atletiblueApp', [
     'ngTouch'
   ]);
   
-mainApp.config(function ($routeProvider) {
+/*mainApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: '../views/main.html',
@@ -26,4 +26,14 @@ mainApp.config(function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
+  });*/
+atletiblueApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.
+  when('/', {
+    templateUrl: 'views/main.html',
+    controller: 'MainCtrl'
+  }).
+  otherwise({
+    redirectTo: '/'
   });
+}]);

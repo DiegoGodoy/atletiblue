@@ -7,13 +7,13 @@
  * # MainCtrl
  * Controller of the atletiblueApp
  */
-var mainController = angular.module('atletiblueApp', [])
+//var mainController = angular.module('mainController', []);
 
-var prueba = {"Nombre": "Juan Manuel Sanchez Garcia-Rowe","Edad": 28,"Numero": 1,"Posicion": "Portero","Partidos jugados": "","Goles": ""};
+//var prueba = {"Nombre": "Juan Manuel Sanchez Garcia-Rowe","Edad": 28,"Numero": 1,"Posicion": "Portero","Partidos jugados": "","Goles": ""};
 
 
-mainController.controller('MainCtrl', ['$scope', '$http', '$location', '$anchorScroll', function ($scope, $http, $location, $anchorScroll)
-
+//mainController.controller("MainCtrl", ['$scope', '$http', '$location', '$anchorScroll', function ($scope, $http, $location, $anchorScroll)
+atletiblueApp.controller("MainCtrl", ['$scope', '$http', function ($scope, $http)
   {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -21,6 +21,5 @@ mainController.controller('MainCtrl', ['$scope', '$http', '$location', '$anchorS
       'Karma'
     ];
     
-    $scope.linea = prueba;
     
   }]);
