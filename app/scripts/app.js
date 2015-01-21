@@ -8,19 +8,19 @@
  *
  * Main module of the application.
  */
-angular
-  .module('atletiblueApp', [
+var mainApp = angular.module('atletiblueApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+  
+mainApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: '../views/main.html',
         controller: 'MainCtrl'
       })
       .otherwise({
