@@ -1,25 +1,10 @@
-'use strict';
-
-/**
- * @ngdoc function
- * @name atletiblueApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the atletiblueApp
- */
-//var mainController = angular.module('mainController', []);
-
-//var prueba = {"Nombre": "Juan Manuel Sanchez Garcia-Rowe","Edad": 28,"Numero": 1,"Posicion": "Portero","Partidos jugados": "","Goles": ""};
-
-
-//mainController.controller("MainCtrl", ['$scope', '$http', '$location', '$anchorScroll', function ($scope, $http, $location, $anchorScroll)
-atletiblueApp.controller("MainCtrl", ['$scope', '$http', function ($scope, $http)
-  {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+atletiblueApp.controller('MainCtrl', ['$scope', function ($scope) {
     
-    
-  }]);
+      'use strict';
+      //JSON en código para cargar la barra de navegación y sus rutas
+      $scope.menu = [{ruta: '#', nombre: 'inicio'},
+                     {ruta: '#historia', nombre: 'historia'},
+                     {ruta: '#plantilla', nombre: 'plantilla'},
+                     {ruta: '#noticias', nombre: 'noticias'},
+                     {ruta: '#competicion', nombre: 'competición'}];
+}]);

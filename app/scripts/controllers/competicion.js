@@ -1,4 +1,4 @@
-atletiblueApp.controller('HistoriaCtrl', ['$scope', function ($scope) {
+atletiblueApp.controller('CompeticionCtrl', ['$scope', function ($scope) {
 
     'use strict';
 

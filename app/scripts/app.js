@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc overview
  * @name atletiblueApp
@@ -8,6 +6,7 @@
  *
  * Main module of the application.
  */
+
 var atletiblueApp = angular.module('atletiblueApp', [
     'ngAnimate',
     'ngCookies',
@@ -18,17 +17,32 @@ var atletiblueApp = angular.module('atletiblueApp', [
   ]);
   
 
-atletiblueApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-  when('/', {
-    templateUrl: 'views/main.html',
-    controller: 'MainCtrl'
-  }).
-  when('/historia', {
-    templateUrl: 'views/historia.html',
-    controller: 'HistoriaCtrl'
-  }).
-  otherwise({
-    redirectTo: '/'
-  });
+atletiblueApp.config(['$routeProvider', function ($routeProvider) {
+
+    'use strict';
+
+    $routeProvider.
+    when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+    }).
+    when('/historia', {
+        templateUrl: 'views/historia.html',
+        controller: 'HistoriaCtrl'
+    }).
+    when('/plantilla', {
+        templateUrl: 'views/plantilla.html',
+        controller: 'PlantillaCtrl'
+    }).
+    when('/noticias', {
+        templateUrl: 'views/noticias.html',
+        controller: 'NoticiasCtrl'
+    }).
+    when('/competicion', {
+        templateUrl: 'views/competicion.html',
+        controller: 'CompeticionCtrl'
+    }).
+    otherwise({
+        redirectTo: '/'
+    });
 }]);

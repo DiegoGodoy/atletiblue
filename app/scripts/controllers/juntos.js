@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name atletiblueApp.controller:AboutCtrl
@@ -16,8 +15,6 @@ angular.module('atletiblueApp')
     ];
   });
 
-'use strict';
-
 /**
  * @ngdoc function
  * @name atletiblueApp.controller:MainCtrl
@@ -31,7 +28,7 @@ angular.module('atletiblueApp')
 
 
 //mainController.controller("MainCtrl", ['$scope', '$http', '$location', '$anchorScroll', function ($scope, $http, $location, $anchorScroll)
-atletiblueApp.controller("MainCtrl", ['$scope', '$http', function ($scope, $http)
+atletiblueApp.controller('MainCtrl', ['$scope', function ($scope)
   {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
