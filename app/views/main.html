@@ -79,11 +79,11 @@
                         </div>
                         <!-- /.row -->
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <i class="fa fa-newspaper-o fa-3x"></i>
-                                        <h2>Noticias</h2> 
+                                            Noticias
 
                                     </div>
                                 </div>
@@ -91,15 +91,94 @@
 
                             </div>
                             <!-- /.col-lg-8 -->
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <i class="fa fa-bars fa-fw"></i> Clasificación
+                                        <i class="fa fa-bars fa-fw"></i>
+                                        Clasificación
+                                        <br>
+                                        <br>
                                          <!--<ul>
                                             <li ng-repeat="profesor in profesores">
                                             <a ng-click="remove(profesor)">Nombre: {{profesor.name}} - Departamento: {{profesor.departamento}}</a>
                                             </li> 
                                         </ul>-->
+                                        <div class="tablaClasificacion" >
+                                            <table >
+                                                <tr >
+                                                  <td></td>
+                                                   <td ng-repeat="colum in encabezado">
+                                                       <a href="" ng-click="ordenarPor({{colum.nombre}})">
+                                                           {{colum.nombre}}</a>
+                                                        <span class="caret" style="cursor:pointer"
+                                                           ng-click="ordenarPor({{colum.inverso}})"></span>
+                                                    </td>
+                                                </tr>
+                                                    <!--<td  a href="" ng-
+                                                    click="ordenarPor('Equipo')">Equipo</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-Equipo')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('PT')">PT</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-PT')" ></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('PJ')">PJ</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-PJ')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('PG')">PG</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-PG')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('PE')">PE</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-PE')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('PP')">PP</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-PP')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('GF')">GF</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-GF')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('GC')">GC</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-GC')"></span>
+                                                    </td>
+                                                    <td a href="" ng-
+                                                    click="ordenarPor('DG')">DG</a>
+                                                    <span class="caret" style="cursor:pointer"
+                                                       ng-click="ordenarPor('-DG')"></span>
+                                                    </td>-->
+                                                </tr>
+                                                <tr  ng-repeat="filas in clasificacion
+                                                | orderBy:ordenSeleccionado"
+                                                ng-mouseenter="handleEvent($event)"
+                                                ng-mouseleave="handleEvent($event)">
+                                                    <td >{{$index+1}}</td>
+                                                    <td >{{filas.Equipo}}</td>
+                                                    <td >{{filas.PT}}</td>
+                                                    <td >{{filas.PJ}}</td>
+                                                    <td >{{filas.PG}}</td>
+                                                    <td >{{filas.PE}}</td>
+                                                    <td >{{filas.PP}}</td>
+                                                    <td >{{filas.GF}}</td>
+                                                    <td >{{filas.GC}}</td>
+                                                    <td >{{filas.DG}}</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
 
                                     </div>
                                     <!-- /.panel-heading -->

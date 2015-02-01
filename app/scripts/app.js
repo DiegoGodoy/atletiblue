@@ -15,7 +15,6 @@ var atletiblueApp = angular.module('atletiblueApp', [
     'ngSanitize',
     'ngTouch'
   ]);
-  
 
 atletiblueApp.config(['$routeProvider', function ($routeProvider) {
 
