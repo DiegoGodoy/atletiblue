@@ -4,14 +4,39 @@
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-body">
-                        <ul id="galeria">
-                            <li><img src="images/plantilla.jpg" border="0"/></li>
-                            <li><img src="images/plantilla2.jpg" border="0"/></li>
-                            <li><img src="images/plantilla3.jpg" border="0"/></li>
-                        </ul>
+                         <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                          <!-- indicadores para hacer el ciclo -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+                            <li data-target="#miCarrusel" data-slide-to="1"></li>
+                            <li data-target="#miCarrusel" data-slide-to="2"></li>
+                          </ol>
+
+                          <!-- Imágenes del slide -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="images/plantilla.jpg">
+                            </div>
+                            <div class="item">
+                              <img src="images/plantilla2.jpg" >
+                            </div>
+                            <div class="item">
+                              <img src="images/plantilla3.jpg">
+                            </div>
+                          </div>
+
+                          <!-- botón retrasar y avanzar -->
+                         <div class="left carousel-control" href="#miCarrusel"
+                           role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" ></span>
+                          </div>
+                          <div class="right carousel-control" href="#miCarrusel"
+                           role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--/col-12-->
         </div>
     </div>
