@@ -41,6 +41,10 @@ atletiblueApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/competicion.html',
         controller: 'CompeticionCtrl'
     }).
+    when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+    }).
     otherwise({
         redirectTo: '/'
     });
