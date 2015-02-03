@@ -15,14 +15,8 @@ atletiblueApp.controller('MainCtrl', ['$scope','$resource', function ($scope,$re
                    {ruta: '#noticias', nombre: 'noticias'},
                    {ruta: '#competicion', nombre: 'competición'}];
 
-
-    $scope.ordenarPor = function(orden){
-                    $scope.ordenSeleccionado= orden;
-                };
-
-    $scope.clasificacion = Clasificacion.query();
+    $scope.clasificacion = Clasificacion.query({});
     //$scope.clasificacion.sort(function(a,b) { return a.PT - b.PT } );
-    console.log($scope.clasificacion.items);
 
 
     $scope.encabezado=['Equipo', 'PT', 'PJ', 'PG', 'PE', 'PP', 'GF', 'GC', 'DG'];
