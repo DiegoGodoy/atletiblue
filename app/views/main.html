@@ -1,5 +1,4 @@
-
- <div class="container" >
+<div class="container" >
         <div class="row">
 
             <div class="col-md-12">
@@ -99,15 +98,14 @@
                                         <br>
                                         <br>
                                         <div class="tablaClasificacion" >
-                                            <table >
+                                            <table class="sortable" id="anyid">
                                                 <tr >
-                                                  <td></td>
-                                                   <td ng-repeat="colum in encabezado">
+                                                  <th></th>
+                                                   <th ng-repeat="colum in encabezado">
                                                         {{colum}}
-                                                    </td>
+                                                    </th>
                                                 </tr>
 
-                                                </tr>
                                                 <tr  ng-repeat="filas in clasificacion">
                                                         <td >{{$index+1}}</td>
                                                         <td >{{filas.Equipo}}</td>
@@ -187,5 +185,3 @@
             </div>
         </div>
     </footer>
-
-
