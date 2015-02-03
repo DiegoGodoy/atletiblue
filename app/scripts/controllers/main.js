@@ -13,7 +13,8 @@ atletiblueApp.controller('MainCtrl', ['$scope','$resource', function ($scope,$re
                    {ruta: '#historia', nombre: 'historia'},
                    {ruta: '#plantilla', nombre: 'plantilla'},
                    {ruta: '#noticias', nombre: 'noticias'},
-                   {ruta: '#competicion', nombre: 'competición'}];
+                   {ruta: '#competicion', nombre: 'competición'},
+                   {ruta: '#contacto', nombre: 'contacto'}];
 
     $scope.clasificacion = Clasificacion.query({});
     //$scope.clasificacion.sort(function(a,b) { return a.PT - b.PT } );

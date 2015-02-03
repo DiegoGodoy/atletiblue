@@ -78,16 +78,24 @@
                         </div>
                         <!-- /.row -->
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div ng-controller="NoticiasCtrl" class="col-lg-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <i class="fa fa-newspaper-o fa-3x"></i>
                                             Noticias
+                                            <hr class="separadorTitulos">
+                                            <div  ng-repeat="noti in noticias | limitTo:noticiasMostradas">
+                                        
+                                                <h3>{{noti.Titulo}}</h3>
+                                                <small style="font-family:courier,'new courier';" class="text-muted">{{noti.Fecha}}</small>
+                                                <h4><span class="label label-default"><a href="{{noti.Ruta}}" >Leer más</a></span></h4>
+                                                <hr>
+                                            </div>
+                                            <a href="#noticias">Accede a todas las noticias >></a>
 
                                     </div>
-                                </div>
                                 <!-- /.panel -->
-
+                                </div>
                             </div>
                             <!-- /.col-lg-8 -->
                             <div class="col-lg-6">
@@ -118,26 +126,17 @@
                                                         <td >{{filas.GC}}</td>
                                                         <td >{{filas.DG}}</td>
                                                 </tr>
-
                                             </table>
                                         </div>
-
-
                                     </div>
                                     <!-- /.panel-heading -->
-
                                 </div>
                                 <!-- /.panel -->
-
-
                             </div>
                             <!-- /.col-lg-4 -->
                         </div>
-
                     </div>
                 </div>
-
-
 
             </div>
             <!--/col-12-->
@@ -145,7 +144,7 @@
     </div>
 
 
-    <hr>
+    <br>
 
     <div class="container" id="footer">
         <div class="row">
@@ -162,9 +161,9 @@
         </div>
     </div>
 
-    <hr>
+    <br>
 
-    <hr>
+    <br>
 
     <footer>
         <div class="container">

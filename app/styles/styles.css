@@ -223,7 +223,7 @@ a,a:hover {
       list-style: none;
       border: 10px solid #1a1a1a;
       overflow: hidden;
-      padding: .3em .3em 4em .3em
+      padding: .3em .3em 4em .3em;
   }
 
 /*#loginform
@@ -368,4 +368,13 @@ border-radius:15px;
   color: white;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+}
+
+hr.separadorTitulos{
+  background-color: #1a1a1a;
+  height: 3px;
+}
+hr{
+  background-color: #D0D0D0;
+  height:1px;
 }
