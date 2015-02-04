@@ -125,17 +125,7 @@ a,a:hover {
   margin-bottom:8px;
 }
 
-.img-container {
-  overflow:hidden;
-  height:170px;
-}
 
-.img-container img {
-  min-width:280px;
-  min-height:180px;
-  max-width:380px;
-  max-height:280px;
-}
 
 .txt-container {
   overflow:hidden;
@@ -146,7 +136,18 @@ a,a:hover {
   overflow:hidden;
   height:90px;
 }
-
+.labelPrincipal{
+  background:-o-linear-gradient(bottom, #111166 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #111166), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #111166 5%, #003f7f 100% );
+	
+  border-radius:5px;
+  padding-left:5px;
+  padding-right:5px;
+  font-size:medium;
+}
+.labelPrincipal a{
+  color:#fff;
+}
 .label-float{
   margin:0 auto;
   position: absolute;
@@ -159,12 +160,8 @@ a,a:hover {
 }
     
 .btn-twitter {background-color:#4099FF;color:#fff;}
-.btn-facebook {background-color:#3B5998;color:#fff;}
-.btn-google-plus {background-color:#d34836;color:#fff;}
 
 .btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
-.btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
-.btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
 
 .tablaClasificacion {
 	margin:0px;padding:0px;
@@ -202,8 +199,6 @@ a,a:hover {
 .tablaClasificacion tr:first-child td {
 		background:-o-linear-gradient(bottom, #111166 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #111166), color-stop(1, #003f7f) );
 	background:-moz-linear-gradient( center top, #111166 5%, #003f7f 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#111166", endColorstr="#003f7f");	background: -o-linear-gradient(top,#111166,003f7f);
-
 	background-color:#111166;
 	border:0px solid #ffffff;
 	text-align:center;
@@ -225,7 +220,12 @@ a,a:hover {
       overflow: hidden;
       padding: .3em .3em 4em .3em;
   }
-
+.titulosPortada{
+  margin-left:15px;
+  font-size:xx-large;
+  font-family:'Oswald',arial narrow,sans-serif;
+  font-weight:bold;
+}
 /*#loginform
 {
 width:550px;
@@ -377,4 +377,37 @@ hr.separadorTitulos{
 hr{
   background-color: #D0D0D0;
   height:1px;
+}
+.todasNoticias a{
+  color: #111166 ;
+}
+.todasNoticias a:hover{
+  text-decoration:underline;
+}
+.todasNoticias a:active{
+  font-weight: bold;
+}
+
+
+.historia{
+  display: block;
+  color: black;
+  
+}
+
+.historia .izquierda {
+float: left;
+margin: 0 1em .5ex 0;
+}
+
+
+.historia .derecha {
+float: right;
+margin: 0 1em .5ex 0;
+}
+
+#contacto{
+font-size: 3em;
+font-weight: bold;
+text-align: left;
 }

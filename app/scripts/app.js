@@ -49,6 +49,26 @@ atletiblueApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/contacto.html',
         controller: 'ContactoCtrl'
     }).
+    when('/noticia1', {
+        templateUrl: 'views/noticias/noticia1.html',
+        controller: 'NoticiasCtrl'
+    }).
+    when('/noticia2', {
+        templateUrl: 'views/noticias/noticia2.html',
+        controller: 'NoticiasCtrl'
+    }).
+    when('/noticia3', {
+        templateUrl: 'views/noticias/noticia3.html',
+        controller: 'NoticiasCtrl'
+    }).
+    when('/noticia4', {
+        templateUrl: 'views/noticias/noticia4.html',
+        controller: 'NoticiasCtrl'
+    }).
+    when('/noticia5', {
+        templateUrl: 'views/noticias/noticia5.html',
+        controller: 'NoticiasCtrl'
+    }).
     otherwise({
         redirectTo: '/'
     });

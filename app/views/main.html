@@ -56,13 +56,13 @@
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-3">
-                                                <img alt="" src="images/escudo.png" style="width:100px;height:100px" class="img-circle">
+                                                <img alt="" src="images/escudo.png" style="width:125px;height:125px" class="img-circle">
                                             </div>
                                             <div class="col-xs-6 text-center">
                                                 <h1>3-3 </h1>
                                             </div>
                                             <div class="col-xs-3">
-                                                <img alt="" src="images/escudo.png" style="width:100px;height:100px" class="img-circle pull-right">
+                                                <img alt="" src="images/escudo.png" style="width:125px;height:125px" class="img-circle pull-right">
                                             </div>
                                         </div>
                                     </div>
@@ -82,16 +82,17 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <i class="fa fa-newspaper-o fa-3x"></i>
-                                            Noticias
+                                            <span class="titulosPortada">Noticias</span>
                                             <hr class="separadorTitulos">
                                             <div  ng-repeat="noti in noticias | limitTo:noticiasMostradas">
                                         
                                                 <h3>{{noti.Titulo}}</h3>
-                                                <small style="font-family:courier,'new courier';" class="text-muted">{{noti.Fecha}}</small>
-                                                <h4><span class="label label-default"><a href="{{noti.Ruta}}" >Leer más</a></span></h4>
+                                                <medium style="font-family:courier,'new courier';" class="text-muted">{{noti.Fecha}}</medium>
+                                                <p>{{noti.Entrada}}</p>
+                                                <h4><span class="labelPrincipal"><a href="{{noti.Ruta}}" >Leer más</a></span></h4>
                                                 <hr>
                                             </div>
-                                            <a href="#noticias">Accede a todas las noticias >></a>
+                                           <span class="todasNoticias"> <a  href="#noticias">Más noticias >></a></span>
 
                                     </div>
                                 <!-- /.panel -->
@@ -101,10 +102,10 @@
                             <div class="col-lg-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <i class="fa fa-bars fa-fw"></i>
-                                        Clasificación
-                                        <br>
-                                        <br>
+                                        <i class="fa fa-table fa-3x"></i>
+                                        <span class="titulosPortada">Clasificación</span>
+                                        <hr class="separadorTitulos">
+
                                         <div class="tablaClasificacion" >
                                             <table>
                                                 <tr >
@@ -142,45 +143,3 @@
             <!--/col-12-->
         </div>
     </div>
-
-
-    <br>
-
-    <div class="container" id="footer">
-        <div class="row">
-            <div class="col col-sm-12">
-
-                <h1>Follow Us</h1>
-                <div class="btn-group">
-                    <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
-                    <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
-                    <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <br>
-
-    <br>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul class="list-inline">
-                        <li><i class="icon-facebook icon-2x"></i>
-                        </li>
-                        <li><i class="icon-twitter icon-2x"></i>
-                        </li>
-                        <li><i class="icon-google-plus icon-2x"></i>
-                        </li>
-                        <li><i class="icon-pinterest icon-2x"></i>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </footer>

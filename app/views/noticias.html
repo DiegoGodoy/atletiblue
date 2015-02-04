@@ -1,13 +1,24 @@
-<div class="container" >
+<div ng-controller="NoticiasCtrl" class="container" >
         <div class="row">
 
             <div class="col-md-12">
                 <div class="panel">
-                    <div class="panel-body">
-                        Página de noticias
+                    <div class="panel-heading" style="margin-left:3em;margin-right:3em">
+                                        <i class="fa fa-newspaper-o fa-3x"></i>
+                                            <span class="titulosPortada">Noticias</span>
+                                            <hr class="separadorTitulos">
+                                            <div  ng-repeat="noti in noticias" >
+                                                <img alt="" src="images/escudo.png" style="width:125px;height:125px" class="pull-left">
+                                                <h3 style="margin-top:2em">{{noti.Titulo}}</h3>
+                                                <medium style="font-family:courier,'new courier';" class="text-muted">{{noti.Fecha}}</medium>
+                                                <p>{{noti.Entrada}}</p>
+                                                <h4><span class="labelPrincipal" ><a href="{{noti.Ruta}}" >Leer más</a></span></h4>
+                                                <hr style="margin-top:4em">
+                                            </div>
+                                <!-- /.panel -->
                     </div>
                 </div>
             </div>
             <!--/col-12-->
         </div>
-    </div>
+</div>
