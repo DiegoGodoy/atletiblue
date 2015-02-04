@@ -5,7 +5,7 @@
                 <div class="panel">
                     <div class="panel-body">
                         <div>
-                        <h3 id="contacto">¿Quieres saber más a cerca de nosotros? ¿Quieres formar parte de nuestro equipo? No dudes en ponerte en contacto con 
+                        <h3 id="contacto">¿Quieres saber más acerca de nosotros? ¿Quieres formar parte de nuestro equipo? ¡No dudes en ponerte en contacto con 
                             nosotros!</h3>
                         </div>
                         <br><br>
@@ -14,34 +14,34 @@
                         <form name="miFormulario" class="form-horizontal" nonvalidate ng-submit="add(user)" onsubmit="this.reset()">
                 
                             <div class="form-group">
-                                <label class="control-label col-xs-3">Nombre*:</label>
-                                <div class="col-xs-9">
+                                <label class="control-label col-md-2">Nombre*:</label>
+                                <div class="col-md-8">
                                     <input type="text" class="form-control" placeholder="Nombre" required ng-model="user.nombre">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-xs-3">Apellidos*:</label>
-                                <div class="col-xs-9">
+                                <label class="control-label col-md-2">Apellidos*:</label>
+                                <div class="col-md-8">
                                     <input type="text" class="form-control" placeholder="Apellidos" required ng-model="user.apellido">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-xs-3" >Telefono:</label>
-                                <div class="col-xs-9">
-                                    <input type="tel" class="form-control" placeholder="Telefono" ng-minlength=9 ng-maxlength=9 ng-model="user.telefono">
+                                <label class="control-label col-md-2" >Teléfono:</label>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" placeholder="Teléfono" ng-minlength=9 ng-maxlength=9 ng-model="user.telefono">
                                 </div>
                             </div>
                             
                              <div class="form-group">
-                                <label class="control-label col-xs-3" >E-mail*:</label>
-                                <div class="col-xs-9">
+                                <label class="control-label col-md-2" >E-mail*:</label>
+                                <div class="col-md-8">
                                     <input type="email" class="form-control" placeholder="E-mail" required ng-model="user.email">
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label class="control-label col-xs-3">Comentario*:</label>
-                                <div class="col-xs-9">
+                                <label class="control-label col-md-2">Comentario*:</label>
+                                <div class="col-md-8">
                                     <textarea rows="3" class="form-control" placeholder="Comentario" required ng-model="user.comentario"></textarea>
                                 </div>
                             </div>
@@ -49,29 +49,19 @@
                             
                             <br>
                             <div class="form-group">
-                                <div class="col-xs-offset-3 col-xs-9">
+                                <div class="col-md-offset-2 col-md-7">
                                     <input type="submit" class="btn btn-primary" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm"
-                                        onclick=form.reset ng-disabled="miFormulario.$invalid">
+                                        onclick="location.href='#contacto';alert('Petición enviada correctamente')" ng-disabled="miFormulario.$invalid">
                                     <input type="reset" class="btn btn-default" value="Limpiar">
                                 </div>
                             </div>
                             
                             
                             </div>
-                            
-                            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      Envio correcto
-    </div>
-  </div>
-</div>
+ 
     
                         </form>
                                     
-                        
-                        
-                        
                     </div>
                 </div>
             </div>

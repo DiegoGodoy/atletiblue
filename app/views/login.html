@@ -1,4 +1,4 @@
-<div ng-controller="LoginCtrl" class="container" >
+<div ng-controller="MainCtrl" class="container" >
         <div class="row">
 
             <div class="col-md-12">
@@ -6,11 +6,11 @@
                     <div class="panel-body">
                         <div id="loginform">
                             <div id="mainlogin">
-                                <form action="#">
+                                <form ng-submit="logueo(detalles)">
                                     <input class="inputLogin" type="text"
-                                        placeholder="Usuario" value="" required>
+                                        placeholder="Usuario" value="" required ng-model="detalles.Usuario">
                                     <input class="inputLogin" type="password"
-                                        placeholder="Contraseña" value="" required>
+                                        placeholder="Contraseña" value="" required ng-model="detalles.Contrasena">
                                     <button class="bLogin" type="submit"><i class="fa fa-arrow-right"></i></button>
                                 </form>
                             </div>

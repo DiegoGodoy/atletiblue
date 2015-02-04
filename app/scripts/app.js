@@ -37,13 +37,9 @@ atletiblueApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/noticias.html',
         controller: 'NoticiasCtrl'
     }).
-    when('/competicion', {
-        templateUrl: 'views/competicion.html',
-        controller: 'CompeticionCtrl'
-    }).
     when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        controller: 'MainCtrl'
     }).
     when('/contacto', {
         templateUrl: 'views/contacto.html',

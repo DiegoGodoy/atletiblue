@@ -7,16 +7,16 @@ atletiblueApp.controller('ContactoCtrl', ['$scope','$resource', function ($scope
             apiKey: 'ljDhb1Qm1DfhZGmKr8bZHlSzSbseJQA6', //Key de Mongolab
             id: 'franmacias91'                               //User de Mongobal
         });
-    $scope.master = {};
+    $scope.aux = {};
     
     $scope.peticiones = Peticiones.query({});
 
     $scope.update = function (user) {
-        $scope.master = angular.copy(user);
+        $scope.aux = angular.copy(user);
     };
 
     $scope.reset = function () {
-        $scope.user = angular.copy($scope.master);
+        $scope.user = angular.copy($scope.aux);
     };
 
     $scope.reset();
@@ -30,5 +30,6 @@ atletiblueApp.controller('ContactoCtrl', ['$scope','$resource', function ($scope
         });
         peticion.$save();
     };
+    
 }]);
 

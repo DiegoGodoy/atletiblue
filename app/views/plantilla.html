@@ -1,10 +1,14 @@
+
+
 <div ng-controller="PlantillaCtrl" class="container" >
         <div class="row">
 
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-body">
-                         <div id="miCarrusel" class="carousel slide col-md-7" data-ride="carousel">
+                        <span class="titulosPortada">Plantilla</span>
+                        <hr class="separadorTitulos">
+                         <div id="miCarrusel" class="col-lg-7 col-md-7 col-sm-12 col-xs-12 carousel slide " data-ride="carousel">
                           <!-- indicadores para hacer el ciclo -->
                           <ol class="carousel-indicators">
                             <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
@@ -35,19 +39,15 @@
                             <span class="glyphicon glyphicon-chevron-right"></span>
                           </div>
                         </div>
-                        <div class="col-md-5 palmares">
-                            <h1>At Blue Santa Fe</h1>
-                            <p>Camiseta blanqui-azul, Calzonas azules</p>
-    
-                            <p>Año de creación: 2008</p>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 palmares" style="text-align:center;">
+                            <h1>Palmarés</h1>
                             
-                            <p>Media de edad: 24,7</p>
-                            
-                            <p>Logros destacados</p>
                             <ul>
-                                <li>1 Copa pesky [Temporada 2011/2012].</li>
-                                <li>Subcampeón Boroleague [Temporada 2012/2013]</li>
-                                <li>Tercer Clasificado en liga regular.</li>
+                                <p>Subcampeón Liga [Temporada 2009/2010].</p>
+                                <p>1 Copa pesky [Temporada 2011/2012].</p>
+                                <p>Subcampeón Boroleague [Temporada 2012/2013]</p>
+                                <p>Tercer Clasificado en liga regular.</p>
+                                <p>Y seguirá creciendo, no os preocupéis.....</p>
                             </ul>
                         </div>
                 </div>
@@ -57,22 +57,24 @@
         
         <div class="row">
                             <!-- Jugador -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                                <img alt="" src="images/jugadores/Sinnombre.png" style="width:100%;height:100%; border-radius: 6px;">
+                            <div  ng-repeat="jugador in jugadores">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                    <img alt="" src={{jugador.Foto}} style="width:100%;height:100%; border-radius: 6px;">
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <p >{{jugador.Nombre}}</p>
+                                            <p >{{jugador.Edad}}</p>
+                                            <p >{{jugador.Numero}}</p>
+                                            <p >{{jugador.Posicion}}</p>
                                         </div>
                                     </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">Nombre: Javier Vargas Gerona</span><br>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-3 col-md-6">
+                            <!--<div class="col-lg-3 col-md-6">
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="row">
@@ -266,10 +268,9 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div>-->
                             
                         </div>
-        
         
         
         
