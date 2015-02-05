@@ -7,12 +7,7 @@ atletiblueApp.controller('MainCtrl', ['$scope','$resource', function ($scope,$re
             apiKey: 'ljDhb1Qm1DfhZGmKr8bZHlSzSbseJQA6',
             id: 'franmacias91'
             });
-            
-    var Admin =
-            $resource('https://api.mongolab.com/api/1/databases/atletiblue/collections/administrador/', {
-            apiKey: 'ljDhb1Qm1DfhZGmKr8bZHlSzSbseJQA6',
-            id: 'franmacias91'
-            });
+
 
       //JSON en código para cargar la barra de navegación y sus rutas
     $scope.menu = [{ruta: '#', nombre: 'inicio'},
@@ -24,18 +19,6 @@ atletiblueApp.controller('MainCtrl', ['$scope','$resource', function ($scope,$re
     $scope.encabezado=['Equipo', 'PT', 'PJ', 'PG', 'PE', 'PP', 'GF', 'GC', 'DG'];  
 
     $scope.clasificacion = Clasificacion.query({});
-    /*$scope.administrador = Admin.query({}, function (administrador) {
-        console.log(administrador.item.Usuario);
-        });
-    
-    $scope.logueo = function (detalles) {
-                    
-        if(($scope.administrador.Usuario === detalles.Usuario) && ($scope.administrador.Contrasena === detalles.Contrasena))
-             $scope.logueado=1;       
-        else
-            alert("Nombre de usuario o contraseña incorrectos.");
-        
-    }*/
     
 
 }]);
