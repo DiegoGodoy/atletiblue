@@ -12,10 +12,11 @@
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-3">
-                                                <img alt="" src="images/Vargas.png" style="width:100px;height:100px" class="img-circle">
+                                                <img alt="" src="images/jugadores/jugador2.jpg" style="width:100px;height:100px" class="img-circle">
                                             </div>
                                             <div class="col-xs-9 text-right">
-                                                <div class="huge">26</div>
+                                                <div class="huge">5</div>
+                                                <div>Jaime Sánchez</div>
                                                 <div>Mejor Jugador</div>
                                             </div>
                                         </div>
@@ -34,10 +35,11 @@
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-3">
-                                                <img alt="" src="images/Vargas.png" style="width:100px;height:100px" class="img-circle">
+                                                <img alt="" src="images/jugadores/jugador1.jpg" style="width:100px;height:100px" class="img-circle">
                                             </div>
                                             <div class="col-xs-9 text-right">
-                                                <div class="huge">12</div>
+                                                <div class="huge">17</div>
+                                                <div>Javier Vargas</div>
                                                 <div>Pichichi</div>
                                             </div>
                                         </div>
@@ -59,20 +61,35 @@
                                                 <img alt="" src="images/escudo.png" style="width:125px;height:125px" class="img-circle">
                                             </div>
                                             <div class="col-xs-6 text-center">
-                                                <h1>3-3 </h1>
+                                                <h1>12 - 3 </h1>
                                             </div>
                                             <div class="col-xs-3">
-                                                <img alt="" src="images/escudo.png" style="width:125px;height:125px" class="img-circle pull-right">
+                                                <img alt="" src="images/rival.png" style="width:125px;height:125px" class="img-circle pull-right">
                                             </div>
                                         </div>
-                                    </div>
-                                    <a href="#">
-                                        <div class="panel-footer">
-                                            <span class="pull-left">Ver crónica</span>
-                                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                            <div class="clearfix"></div>
+                                        
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <p>Atleti Blue</p>
+                                            </div>
+                                            <div class="col-xs-4 text-center">
+                                               
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <p style="text-align: right;">Naranja Mecánica</p>
+                                            </div>
                                         </div>
-                                    </a>
+                                        
+                                    </div>
+                                    <div ng-controller="NoticiasCtrl">
+                                        <a href="javascript:ultimaNoticia()"><!--la crónica corresponde a la última noticia insertada-->
+                                            <div class="panel-footer">
+                                                <span class="pull-left">Ver crónica</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

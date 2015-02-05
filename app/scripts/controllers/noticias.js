@@ -10,5 +10,9 @@ atletiblueApp.controller('NoticiasCtrl', ['$scope','$resource', function ($scope
 
     $scope.noticiasMostradas=3;
     $scope.noticias = Noticias.query({});
+    $scope.ultimaNoticia=function(noticias){
+          //return noticias[0].Ruta;
+          location.href=noticias[0].Ruta;
+    }
 
 }]);

@@ -19,10 +19,10 @@
                           <!-- Imágenes del slide -->
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                              <img src="images/plantilla.jpg">
+                              <img src="images/plantilla2.jpg">
                             </div>
                             <div class="item">
-                              <img src="images/plantilla2.jpg" >
+                              <img src="images/plantilla.jpg" >
                             </div>
                             <div class="item">
                               <img src="images/plantilla3.jpg">
@@ -62,14 +62,14 @@
                                     <div class="panel">
                                         <div class="panel-heading">
                                             <div class="row">
-                                                    <img alt="" src={{jugador.Foto}} style="width:100%;height:100%; border-radius: 6px;">
+                                                    <img src= "images/jugadores/jugador{{$index+1}}.jpg" style="width:100%;height:100%; border-radius: 6px;"/>
                                             </div>
                                         </div>
                                         <div class="panel-footer">
                                             <p >{{jugador.Nombre}}</p>
-                                            <p >{{jugador.Edad}}</p>
-                                            <p >{{jugador.Numero}}</p>
-                                            <p >{{jugador.Posicion}}</p>
+                                            <p >Edad: {{jugador.Edad}}</p>
+                                            <p >Número: {{jugador.Numero}}</p>
+                                            <p >Posición: {{jugador.Posicion}}</p>
                                         </div>
                                     </div>
                                 </div>
