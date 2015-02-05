@@ -18,15 +18,38 @@ module.exports = function (grunt) {
         {
           files:
           {
-            src: "app/scripts/controllers/*.js",
-            dest: "app/scripts/controllers/juntos.js"
+            src: "app/scripts/**/*.js",
+            dest: "app/scripts/juntos.js"
+          }
+        },
+        uglify:
+        {
+          js:
+          {
+            src: "app/scripts/juntos.js",
+            dest: "app/scripts/juntosComprimidos.js"
+            
+          },
+          css:
+          {
+            src: ["app/views/noticias/noticia1.html","app/views/noticias/noticia1.html","app/views/noticias/noticia1.html","app/views/noticias/noticia1.html",
+                  "app/views/noticias/noticia1.html","app/views/noticias/noticia1.html","app/views/noticias/noticia1.html","app/views/noticias/noticia1.html",
+                  "app/views/noticias/noticia1.html","app/views/noticias/noticia1.html","app/views/noticias/noticia1.html"],
+            dest: "app/scripts/juntosComprimidos.js"
+          },
+          html:
+          {
+            src: "app/scripts/juntos.js",
+            dest: "app/scripts/juntosComprimidos.js"
           }
         }
 });
 
 grunt.loadNpmTasks("grunt-contrib-concat");
+grunt.loadNpmTasks("grunt-contrib-uglify");
 
   grunt.registerTask('default', [
-    'concat'
+    'concat',
+    'uglify'
   ]);
 };
