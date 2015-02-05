@@ -30,6 +30,12 @@ module.exports = function (grunt) {
             dest: "app/scripts/juntosComprimidos.js"
             
           },
+          
+          css:
+          {
+            src: "app/styles/styles.css",
+            dest: "app/styles/stylesComprimido.css"
+          },
           html:
           {
             src: ["app/views/noticias/noticia1.html","app/views/noticias/noticia2.html","app/views/noticias/noticia3.html","app/views/noticias/noticia4.html",
@@ -40,11 +46,6 @@ module.exports = function (grunt) {
                   "app/views/Comprimido/historiaComprimido.html","app/views/Comprimido/mainComprimido.html","app/views/Comprimido/noticiasComprimido.html",
                   "app/views/Comprimido/plantillaComprimido.html","app/views/Comprimido/indexComprimido.html"]
           },
-          css:
-          {
-            src: "app/styles/styles.css",
-            dest: "app/styles/stylesComprimido.css"
-          }
         }
 });
 

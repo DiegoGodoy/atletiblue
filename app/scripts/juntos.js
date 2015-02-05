@@ -122,7 +122,6 @@ atletiblueApp.controller('ContactoCtrl', function ($scope,Peticiones) {
 
 
 
-
 atletiblueApp.factory('Clasificacion', function ($resource) {
     
     //Variable que contiene la clasificación con todos los equipos alojada en la colección
@@ -209,3 +208,6 @@ atletiblueApp.controller('PlantillaCtrl', ['$scope','$http', function($scope, $h
 	});
 
 }]);
+
+
+
