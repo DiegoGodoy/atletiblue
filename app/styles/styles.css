@@ -406,7 +406,10 @@ font-size: 2em;
 font-weight: bold;
 text-align: left;
 }
-
+.jugadoresPortada{
+  font-weight:bold;
+  text-align:center;
+}
 
 
 
