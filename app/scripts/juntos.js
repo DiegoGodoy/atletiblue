@@ -210,4 +210,3 @@ atletiblueApp.controller('PlantillaCtrl', ['$scope','$http', function($scope, $h
 }]);
 
 
-
