@@ -1,5 +1,11 @@
 /* override bootstrap styles */
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+@colorCabecera: #000044;
+@colorMenu: #111166;
+@colorBlanco: #ffffff;
+@fondoGris: #eeeeee;
+@gradiantePalmares1: #437dd6;
+@gradiantePalmares2: #3960a6;
 
 .navbar-form input, .form-inline input {
   width:auto;
@@ -27,7 +33,7 @@ footer {
 
 #masthead {
   min-height:199px;
-  background-color:#000044;
+  background-color:@colorCabecera;
   color:#aaaacc;
 }
 
@@ -40,7 +46,7 @@ footer {
 
 #masthead .well {
   margin-top:31px;
-  background-color:#111166;
+  background-color:@colorMenu;
   border-color:#000022;
   color:#efefff;
   min-height:127px;
@@ -62,7 +68,7 @@ footer {
 }
 
 .top-spacer {
-  background-color:#ffffff;
+  background-color:@colorBlanco;
   height:40px;
 }
 
@@ -72,7 +78,7 @@ a,a:hover {
 }
 
 .icon-bar {
-  background-color:#fff;
+  background-color:@colorBlanco;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,8 +88,8 @@ a,a:hover {
 }
 
 .navbar-bright {
-  background-color:#111166;
-  color:#fff;
+  background-color:@colorMenu;
+  color:@colorBlanco;
   margin-bottom: 0;
   border-width: 0;
 }
@@ -96,7 +102,7 @@ a,a:hover {
 }
 
 .navbar-bright li > a:hover {
-  background-color:#000044;
+  background-color:@colorCabecera;
 }
 
 .dropdown-menu {
@@ -104,16 +110,16 @@ a,a:hover {
 }
 
 .caret {
-  color:#fff;
+  color:@colorBlanco;
 }
 
 .navbar-toggle {
-  color:#fff;
+  color:@colorBlanco;
   border-width:0;
 }
 
 .navbar-toggle:hover {
-  background-color:#fff;
+  background-color:@colorBlanco;
 }
 
 .panel {
@@ -137,8 +143,8 @@ a,a:hover {
   height:90px;
 }
 .labelPrincipal{
-  background:-o-linear-gradient(bottom, #111166 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #111166), color-stop(1, #003f7f) );
-	background:-moz-linear-gradient( center top, #111166 5%, #003f7f 100% );
+  background:-o-linear-gradient(bottom, @colorMenu 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, @colorMenu), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, @colorMenu 5%, #003f7f 100% );
 	
   border-radius:5px;
   padding-left:5px;
@@ -146,7 +152,7 @@ a,a:hover {
   font-size:medium;
 }
 .labelPrincipal a{
-  color:#fff;
+  color:@colorBlanco;
 }
 .label-float{
   margin:0 auto;
@@ -156,14 +162,14 @@ a,a:hover {
   width:100%;
   opacity:.9;
   padding:6px;
-  color:#fff;
+  color:@colorBlanco;
 }
 
 .tablaClasificacion {
 	margin:0px;padding:0px;
 	width:100%;
 	box-shadow: 10px 10px 5px #888888;
-	border:1px solid #ffffff;
+	border:1px solid @colorBlanco;
 	
 }.tablaClasificacion table{
     border-collapse: collapse;
@@ -176,13 +182,13 @@ a,a:hover {
 
 .tablaClasificacion td{
 	vertical-align:middle;
-		background:-o-linear-gradient(bottom, #ffffff 5%, #eeeeee 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #eeeeee) );
-	background:-moz-linear-gradient( center top, #ffffff 5%, #eeeeee 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#eeeeee");	background: -o-linear-gradient(top,#ffffff,eeeeee);
+		background:-o-linear-gradient(bottom, @colorBlanco 5%, @fondoGris 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, @colorBlanco), color-stop(1, @fondoGris) );
+	background:-moz-linear-gradient( center top, @colorBlanco 5%, @fondoGris 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="@colorBlanco", endColorstr="@fondoGris");	background: -o-linear-gradient(top,@colorBlanco,eeeeee);
 
-	background-color:#ffffff;
+	background-color:@colorBlanco;
 
-	border:1px solid #ffffff;
+	border:1px solid @colorBlanco;
 	border-width:0px 1px 1px 0px;
 	text-align:center;
 	padding:7px;
@@ -193,16 +199,16 @@ a,a:hover {
 }
 
 .tablaClasificacion tr:first-child td {
-		background:-o-linear-gradient(bottom, #111166 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #111166), color-stop(1, #003f7f) );
-	background:-moz-linear-gradient( center top, #111166 5%, #003f7f 100% );
-	background-color:#111166;
-	border:0px solid #ffffff;
+		background:-o-linear-gradient(bottom, @colorMenu 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, @colorMenu), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, @colorMenu 5%, #003f7f 100% );
+	background-color:@colorMenu;
+	border:0px solid @colorBlanco;
 	text-align:center;
 	border-width:0px 0px 1px 1px;
 	font-size:12px;
 	font-family:Arial;
 	font-weight:bold;
-	color:#ffffff;
+	color:@colorBlanco;
 }
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -222,122 +228,6 @@ a,a:hover {
   font-family:'Oswald',arial narrow,sans-serif;
   font-weight:bold;
 }
-/*#loginform
-{
-width:550px;
-height:auto;
-position:relative;
-margin:0 auto;
-}
-
-.inputLogin
-{
-display:block;
-margin:20px auto 15px;
-border-radius:15px;
-background: #333333;
-width:85%;
-padding:12px 20px 15px 20px;
-border:none;
-color:#929999;
-box-shadow:inset 0px 1px 5px #272727;
-font-size:1em;
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-}
-
-.inputLogin:focus
-{
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-box-shadow: 0px 0px 5px 1px #161718;
-}
-
-.bLogin
-{
-background: #111166;
-border-radius:50%;
-border:10px solid #222526;
-font-size:0.9em;
-color:#fff;
-font-weight:bold;
-cursor:pointer;
-width:75px;
-height:75px;
-position:absolute;
-right: -42px;
-top: 48px;
-text-align:center;
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-}
-
-.bLogin:hover
-{
-background:#222526;
-border-color:#111166;
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-}
-
-.bLogin i
-{
-font-size:20px;
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-}
-
-.bLogin:hover i
-{
-color:#ff5f32;
--webkit-transition:0.5s ease;
--moz-transition:0.5s ease;
--o-transition:0.5s ease;
--ms-transition:0.5s ease;
-transition:0.5s ease;
-}
-
-*:focus{outline:none;}
-::-webkit-input-placeholder {
-color:#929999;
-}
-
-:-moz-placeholder { 
-color:#929999;
-}
-
-::-moz-placeholder {  
-color:#929999;
-}
-:-ms-input-placeholder {
-color:#929999;
-}
-
-#mainlogin
-{
-float:left;
-width:250px;
-height:170px;
-padding:10px 15px;
-position:relative;
-background:#555555;
-border-radius:15px;
-}*/
 
 .palmares{
   color: white;
@@ -348,10 +238,10 @@ border-radius:15px;
   border: 1px solid #172b4e;
   border-bottom-color: #142647;
   border-radius: 5px;
-  background-image: -webkit-radial-gradient(cover, #437dd6, #3960a6);
-  background-image: -moz-radial-gradient(cover, #437dd6, #3960a6);
-  background-image: -o-radial-gradient(cover, #437dd6, #3960a6);
-  background-image: radial-gradient(cover, #437dd6, #3960a6);
+  background-image: -webkit-radial-gradient(cover, @gradiantePalmares1, @gradiantePalmares2);
+  background-image: -moz-radial-gradient(cover, @gradiantePalmares1, @gradiantePalmares2);
+  background-image: -o-radial-gradient(cover, @gradiantePalmares1, @gradiantePalmares2);
+  background-image: radial-gradient(cover, @gradiantePalmares1, @gradiantePalmares2);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 10px rgba(0, 0, 0, 0.5);
   padding-left: 1%;
@@ -374,7 +264,7 @@ hr{
   height:1px;
 }
 .todasNoticias a{
-  color: #111166 ;
+  color: @colorMenu ;
 }
 .todasNoticias a:hover{
   text-decoration:underline;
@@ -405,10 +295,6 @@ margin: 0 1em .5ex 0;
 font-size: 2em;
 font-weight: bold;
 text-align: left;
-}
-.jugadoresPortada{
-  font-weight:bold;
-  text-align:center;
 }
 
 

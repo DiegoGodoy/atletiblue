@@ -1,11 +1,4 @@
-/**
- * @ngdoc overview
- * @name atletiblueApp
- * @description
- * # atletiblueApp
- *
- * Main module of the application.
- */
+//Descripción del módulo principal de la aplicación
 
 var atletiblueApp = angular.module('atletiblueApp', [
     'ngAnimate',
@@ -16,6 +9,7 @@ var atletiblueApp = angular.module('atletiblueApp', [
     'ngTouch'
   ]);
 
+//Se configuran las rutas de las vistas y sus controladores
 atletiblueApp.config(['$routeProvider', function ($routeProvider) {
 
     'use strict';
@@ -24,6 +18,10 @@ atletiblueApp.config(['$routeProvider', function ($routeProvider) {
     when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+    }).
+    when('/historia', {
+        templateUrl: 'views/historia.html',
+        controller: 'PlantillaCtrl'
     }).
     when('/plantilla', {
         templateUrl: 'views/plantilla.html',

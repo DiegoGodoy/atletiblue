@@ -7,18 +7,14 @@ atletiblueApp.factory('Noticias', function ($resource) {
             });
     
     return Noticias;
-})
+});
 //Controlador que se encargará de gestionar noticias.html y cada noticia en cuestión
 
 atletiblueApp.controller('NoticiasCtrl',function ($scope,Noticias) {
 
       'use strict';
     //Variable que contiene todas las noticias alojadas en la colección 'noticias' de Mongolab en la ruta que indica $resource
-    /*var Noticias =
-            $resource('https://api.mongolab.com/api/1/databases/atletiblue/collections/noticias/', {
-            apiKey: 'ljDhb1Qm1DfhZGmKr8bZHlSzSbseJQA6',
-            id: 'franmacias91'
-            });*/
+ 
 
     //Variable en memoria para mostrar un número límite de noticias en la vista principal de la web
     //En este caso, se mostrarán siempre las tres últimas noticias de la web.
@@ -38,8 +34,5 @@ atletiblueApp.controller('NoticiasCtrl',function ($scope,Noticias) {
           return location.href=$scope.noticias[$scope.long].Ruta;
     }
       
-    $scope.ordenarPor = function(orden){
-            $scope.inverso= orden;
-          
-    };
+ 
 });
